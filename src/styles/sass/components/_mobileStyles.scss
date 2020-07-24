@@ -1,10 +1,67 @@
 
 @include media(mobile-only) {
+
+  main {
+    height: 100%;
+    margin: auto;
+    @include display-grid;
+    gap: 50px;
+    @include grid-template-columns(1fr);
+  }
+
+  .header {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 50px;
+    border: 1px solid red;
+    background-color: hsl(180, 29%, 50%);
+    background-image: url('../../assets/images/bg-header-mobile.svg');
+  }
+
   .box {
-    height: 300px;
-    background-color: teal;
+    width: 90%;
+    border: 1px solid red;
+    height: 240px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+    background-color:hsl(180, 52%, 96%);
+    border-radius: 5px;
+    font-size: 14px;
+    border-left: 7px solid  hsl(180, 29%, 50%);
     @include display-grid;
     @include grid-template-columns(1fr);
-    @include grid-template-rows(grid-template(2,1fr));
+
+    img {
+      width:  40px;
+      height: 40px;
+      left: 10px;
+      top: -20px;
+      position: absolute;
+    }
+    
+    &__details{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+      
+    }
+
+    &__tool {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-flow: wrap;
+      // margin: auto;
+      padding: 20px 0;
+      border-top: 2px solid  hsl(180, 8%, 52%);
+
+      
+      h4 {
+        border: 1px solid red;
+      }
+    }
   }
 }

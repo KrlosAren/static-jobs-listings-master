@@ -1,14 +1,10 @@
 mixin box(company, logo, time, featured, position, role, level, postedAt, contract, location, languages, tools)
-  .box
-    span.box__rol
-      img(src="/src/assets/images/"+logo)
-      h2=company
-      button=time
-      button=featured
+  article.box
+    img(src="/src/assets/images/"+logo)
+    span.box__details
+      h3 #{company} #{time} #{featured}
       h3=position
-      h4=postedAt
-      h4=contract
-      h4=location
+      h3 #{postedAt} &middot; #{contract} &middot; #{location}
     span.box__tool
       h4=role
       h4=level
