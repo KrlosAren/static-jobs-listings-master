@@ -1,30 +1,31 @@
-@include media(mobile-only) {
-
+@include media(mobile-small) {
   header {
     width: 100%;
     height: 100px;
-    background-image: url('../../assets/images/bg-header-mobile.svg');
+    background-image: url("../../assets/images/bg-header-mobile.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $color-primary;
   }
 
   main {
-    max-width: 320px;
-    background-color: $color-light-cyan;
+    width: 100%;
+    height: auto;
   }
 
   .box {
     width: 80%;
     height: 200px;
-    margin: 100px auto;
+    margin: 65px auto;
     padding: 18px 0;
     border-radius: 8px;
     position: relative;
+    background-color: $color-light-cyan;
     @include display-grid;
     @include grid-template-columns(1fr);
+    @include box-shadow;
 
-    &:nth-child(-n+2)::before{
+    &:nth-child(-n + 2)::before {
       @include border-color(true);
     }
 
@@ -53,7 +54,7 @@
           padding: 0;
           color: $color-primary;
           font-weight: $font-weight-700;
-          @include font-size($font-12);
+          @include font-size($font-14);
         }
 
         ul {
@@ -62,6 +63,7 @@
           padding: 0;
           list-style: none;
           @include font-size(8px);
+
 
           li {
             display: inline;
@@ -86,7 +88,7 @@
         font-family: $font-family-spartan;
         font-weight: $font-weight-700;
         color: $color-very-dark-cyan;
-        @include font-size($font-12);
+        @include font-size($font-15);
       }
 
       &--position {
@@ -95,9 +97,21 @@
         margin: 5px 0;
         display: inline-flex;
         list-style: none;
+        position: relative;
         font-family: $font-family-spartan;
         color: $color-dark-cyan;
         @include font-size(10px);
+        
+      &:before {
+        content: '';
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 20px;
+        position: absolute;
+        border-bottom: 1px solid $color-dark-cyan;
+      }
+
 
         li {
           &:after {
@@ -127,11 +141,11 @@
         flex-wrap: wrap;
         color: $color-primary;
         font-weight: $font-weight-700;
-        @include font-size(10px);
+        @include font-size($font-14);
       }
 
       &:first-child {
-        background-color:red;
+        background-color: red;
       }
 
       li {

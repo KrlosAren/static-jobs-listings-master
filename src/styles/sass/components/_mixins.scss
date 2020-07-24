@@ -37,3 +37,8 @@
     border-color: none;
   }
 }
+
+
+@mixin box-shadow{
+  box-shadow: 2px 2px 23px $color-dark-cyan;
+}

@@ -22,8 +22,12 @@
     @media only screen and (min-width: 1780px) {
       @content;
     }
-  } @else if $breakpoint == mobile-only {
+  } @else if $breakpoint == mobile-big {
     @media only screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == mobile-small {
+    @media only screen and (max-width: 375px) {
       @content;
     }
   } @else if $breakpoint == tablet-p-only {
