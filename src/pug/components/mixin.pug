@@ -1,12 +1,27 @@
 mixin box(company, logo, time, featured, position, role, level, postedAt, contract, location, languages, tools)
   article.box
     img(src="/src/assets/images/"+logo)
-    span.box__details
-      h3 #{company} #{time} #{featured}
+    span.box__content
+      span.box__content--title
+        h1 #{company}
+        ul
+          if (time === true)
+            li new!
+          if (featured === true)
+            li Featured
       h3=position
-      h3 #{postedAt} &middot; #{contract} &middot; #{location}
+      ul.box__content--position
+        li #{postedAt}
+        li #{contract}
+        li #{location}
     span.box__tool
-      h4=role
-      h4=level
-      h4=languages
-      h4=tools
+      ul
+        li=role
+        li=level
+        each value in languages
+          li #{value}
+        each tool in tools
+          li #{tool}
+
+
+//- &middot;

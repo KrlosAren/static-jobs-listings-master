@@ -1,6 +1,39 @@
+/* -------------- FUNCTIONS AND MIXINS ---------------*/
+
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+  line-height: calculateRem($size) * 1.5;
+}
+
+
 @each $header , $size in (h1: 20px, h2: 18px, h3: 16px , h4: 14px , h5: 12px) {
   #{$header} {
     font-size: $size;
     margin: 0;
+  }
+}
+
+@mixin border-color($border-color: true) {
+  @if border-color {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 7px;
+    height: 100%;
+    border-bottom-left-radius:  8px;
+    border-top-left-radius:  8px;
+    border-left: 7px solid $color-primary;
+  } @else {
+    border-color: none;
   }
 }

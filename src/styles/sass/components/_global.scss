@@ -1,3 +1,28 @@
+/* -------------- COLORS ---------------*/
+
+$color-primary:         hsl(180, 29%, 50%);
+$color-light-gray:      hsl(180, 52%, 96%);
+$color-light-cyan:      hsl(180, 31%, 95%);
+$color-dark-cyan:       hsl(180, 8%, 52%);
+$color-very-dark-cyan:  hsl(180, 14%, 20%);
+
+
+/* -------------- TYPOGRAPHY ---------------*/
+
+$font-family-spartan:'Spartan', sans-serif;
+
+
+$font-weight-500: 500;
+$font-weight-700: 700;
+
+$font-12: 12px;
+$font-14: 14px;
+$font-15: 15px;
+
+/* -------------- OTHERS ---------------*/
+
+$box-shadow : 0px 5px 25px $color-dark-cyan;
+
 
 
 body {
