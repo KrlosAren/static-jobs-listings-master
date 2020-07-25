@@ -1,0 +1,212 @@
+
+  header {
+    width: 100%;
+    height: 150px;
+    background-image: url("../../assets/images/bg-header-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $color-primary;
+  }
+
+  main {
+    width: 100%;
+    height: auto;
+  }
+
+  .filter {
+    width: 80%;
+    min-height: 60px;
+    bottom: 30px;
+    padding: 10px 35px;
+    margin: auto;
+    position: relative;
+    border-radius: $border-radius;
+    background-color: $color-light-cyan;
+    @include display-grid;
+    @include box-shadow;
+    @include grid-template-columns(1fr min(40px));
+
+    &__container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      
+      span {
+        margin: 0 10px;
+        color: $color-primary;
+        background-color: $color-light-cyan;
+        font-weight: $font-weight-700;
+        font-family: $font-family-spartan;
+        @include font-size(10px);
+
+        &::after {
+          content: '\2716';
+          padding: 6px 8px;
+          margin-left: 8px;
+          color: $color-light-cyan;
+          background-color: $color-primary;
+          font-family: $font-family-spartan;
+          border-top-right-radius:    3px;
+          border-bottom-right-radius: 3px;
+          // @include font-size($font-12);
+
+          &:hover {
+            background-color: red;
+          }
+        }
+      }
+    }
+
+    h3 {
+      color: $color-primary;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-weight: $font-weight-700;
+      font-family: $font-family-spartan;
+      @include font-size($font-12);
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline  ;
+      }
+    }
+  }
+
+  .box {
+    width: 80%;
+    height: auto;
+    margin: 65px auto;
+    padding: 20px;
+    border-radius: $border-radius;
+    position: relative;
+    align-items: center;
+    background-color: $color-light-gray;
+    @include display-grid;
+    @include grid-template-columns(100px auto auto);
+    @include box-shadow;
+
+    &:nth-child(-n + 3)::before {
+      @include border-color(true);
+    }
+
+    img {
+      justify-self: center;
+      width:  80%;
+      display: block;
+    }
+
+    &__content {
+      padding: 8px 20px;
+
+      &--title {
+        width: 100%;
+        margin: 5px 0;
+        display: flex;
+        align-items: baseline;
+
+        h1 {
+          text-transform: capitalize;
+          background: none;
+          padding: 0;
+          color: $color-primary;
+          font-weight: $font-weight-700;
+          @include font-size($font-15);
+
+        }
+
+        ul {
+          display: block;
+          margin: 0 5px;
+          padding: 0;
+          list-style: none;
+          @include font-size($font-12);
+
+
+          li {
+            display: inline;
+            margin: 0 2px;
+            padding: 4px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            color: $color-light-cyan;
+            font-family: $font-family-spartan;
+            font-weight: $font-weight-500;
+            background-color: $color-very-dark-cyan;
+            @include font-size(10px);
+
+            &:first-of-type {
+              background: $color-primary;
+            }
+          }
+        }
+      }
+
+      h3 {
+        margin: 8px 0 4px 0;
+        font-family: $font-family-spartan;
+        font-weight: $font-weight-700;
+        color: $color-very-dark-cyan;
+        @include font-size($font-15);
+
+        &:hover {
+          cursor: pointer;
+          color: $color-primary;
+        }
+      }
+
+      &--position {
+        padding: 0;
+        width: 100%;
+        margin: 5px 0;
+        display: inline-flex;
+        list-style: none;
+        position: relative;
+        font-family: $font-family-spartan;
+        color: $color-dark-cyan;
+        @include font-size($font-14);
+
+        li {
+          &:after {
+            content: "\00b7";
+            font-weight: $font-weight-700;
+            margin: 0 5px;
+          }
+
+          &:last-of-type:after {
+            content: none;
+          }
+        }
+      }
+    }
+
+    &__tool {
+      width: 100%;
+      display: inline-flex;
+      justify-content: flex-end;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        color: $color-primary;
+        font-weight: $font-weight-700;
+        @include font-size($font-14);
+      }
+      li {
+        border-radius: 4px;
+        padding: 5px;
+        margin:  5px;
+        background-color: $color-light-cyan;
+
+        &:hover {
+          cursor: pointer;
+          color: $color-light-gray;
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
