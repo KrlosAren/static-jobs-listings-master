@@ -1,4 +1,3 @@
-import data from './db.json'
 
 import './styles/sass/main.scss'
 
@@ -18,28 +17,42 @@ import eyecamco from './assets/images/eyecam-co.svg'
 import loopstudios from './assets/images/loop-studios.svg'
 import theairfiltercompany from './assets/images/the-air-filter-company.svg'
 
-require('html-loader!../index.html');
+
+import JobsList from './pages/JobsList.js'
+
+// const containerFilter = document.querySelector('.filter')
+
+// const clearButton = document.getElementById('clear')
+
+// const filter = Array.from(document.querySelectorAll('#filter')  )
+// filter.forEach(category =>{
+//   category.addEventListener('click', () =>{
+//     const filter = []
+//     containerFilter.style.display = 'flex'
+//     const sessionStorage = window.sessionStorage
+//     filter.push(category.textContent)
+//     sessionStorage.setItem('filter', JSON.stringify(filter))
+//   })
 
 
-const containerFilter = document.querySelector('.filter')
-
-const clearButton = document.getElementById('clear')
-
-const filter = Array.from(document.querySelectorAll('#filter')  )
-filter.forEach(category =>{
-  category.addEventListener('click', () =>{
-    const filter = []
-    containerFilter.style.display = 'flex'
-    const sessionStorage = window.sessionStorage
-    filter.push(category.textContent)
-    sessionStorage.setItem('filter', JSON.stringify(filter))
-  })
-
-
-  clearButton.addEventListener('click', () => {
-    containerFilter.style.display = 'none'
+//   clearButton.addEventListener('click', () => {
+//     containerFilter.style.display = 'none'
     
+//   })
+// })
+
+const app = document.getElementById('app')
+
+
+const render = async () => {
+
+  app.innerHTML = await JobsList()
+}
+
+window.addEventListener('load',render)
+
+if(module.hot) {
+  module.hot.accept('./pages/JobsList.js', () => {
+    render()
   })
-})
-const jobsList = data
-console.log(jobsList)
+}
