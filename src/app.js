@@ -3,6 +3,19 @@
 
 import './styles/sass/main.scss'
 
+import myhome from './assets/images/myhome.svg'
+import manage from './assets/images/manage.svg'
+import insure from './assets/images/insure.svg'
+import faceit from './assets/images/faceit.svg'
+import shortly from './assets/images/shortly.svg'
+import account from './assets/images/account.svg'
+import photosnap from './assets/images/photosnap.svg'
+import eyecamco from './assets/images/eyecam-co.svg'
+import loopstudios from './assets/images/loop-studios.svg'
+import theairfiltercompany from './assets/images/the-air-filter-company.svg'
+
+require('html-loader!../index.html');
+
 
 const containerFilter = document.querySelector('.filter')
 
