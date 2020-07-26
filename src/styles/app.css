@@ -674,7 +674,7 @@ main {
 .box__tool {
   width: 100%;
   display: inline-flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .box__tool ul {
   margin: 0;
@@ -759,6 +759,5 @@ main {
   .box__tool {
     padding: 8px 20px;
     display: flex;
-    justify-items: flex-start;
   }
 }
