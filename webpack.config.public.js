@@ -4,6 +4,7 @@ const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
+
 module.exports = {
   entry:{
     app: path.resolve(__dirname,'./src/app.js'),
@@ -23,26 +24,27 @@ module.exports = {
       {
         test: /\.html$/i,
         use: [
-          // 'file-loader?name=[name].[ext]',
-          // 'extract-loader',
           'html-loader'
           ],
       },
       {
-        test: /\.css$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
-          MiniCssExtractPlugin.loader,
-          'resolve-url-loader',
-          'css-loader'
-        ]
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'resolve-url-loader',
-          'sass-loader',
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader:'css-loader',
+          },
+          {
+            loader: 'resolve-url-loader',
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: require('sass')
+            }
+          }
         ]
       },
       {
@@ -60,23 +62,11 @@ module.exports = {
         test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
         loader: 'file-loader',
         options: {
+          publicPath: '../',
           outputPath: '/src/assets/',
           name: '[name].[ext]',
         },
       },
-      // {
-      //   test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
-      //   use: [
-      //     {
-      //       loader: 'url-loader',
-      //       options: {
-      //         outputPath: './src/assets/',
-      //         name: '[name].[ext]',
-      //         limit: false,
-      //       }
-      //     }
-      //   ]
-      // },
     ]
   },
   plugins: [

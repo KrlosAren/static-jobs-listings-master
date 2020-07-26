@@ -79,7 +79,7 @@
     border-radius: $border-radius;
     position: relative;
     align-items: center;
-    background-color: $color-light-gray;
+    // background-color: $color-light-gray;
     @include display-grid;
     @include grid-template-columns(100px auto auto);
     @include box-shadow;
@@ -181,7 +181,7 @@
     &__tool {
       width: 100%;
       display: inline-flex;
-      justify-content: flex-start;
+      justify-content: flex-end;
 
       ul {
         margin: 0;
@@ -197,7 +197,7 @@
         border-radius: 4px;
         padding: 5px;
         margin:  5px;
-        background-color: $color-light-cyan;
+        background-color: $color-light-gray;
 
         &:hover {
           cursor: pointer;

@@ -20,6 +20,13 @@ The designs were created to the following widths:
 - Dark Grayish Cyan: hsl(180, 8%, 52%)
 - Very Dark Grayish Cyan: hsl(180, 14%, 20%)
 
+
+hsl(180, 29%, 50%)
+hsl(180, 14%, 20%);
+ hsl(180, 29%, 50%);
+ hsl(180, 31%, 95%);
+
+ hsl(180, 31%, 95%);
 ## Typography
 
 ### Body Copy

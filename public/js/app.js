@@ -105,7 +105,7 @@ eval("// Module\nvar code = \"// Module\\nvar code = \\\"<!DOCTYPE html>\\\\n<ht
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_sass_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/sass/main.scss */ \"./src/styles/sass/main.scss\");\n/* harmony import */ var _styles_sass_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_sass_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_images_myhome_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/images/myhome.svg */ \"./src/assets/images/myhome.svg\");\n/* harmony import */ var _assets_images_manage_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/images/manage.svg */ \"./src/assets/images/manage.svg\");\n/* harmony import */ var _assets_images_insure_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/images/insure.svg */ \"./src/assets/images/insure.svg\");\n/* harmony import */ var _assets_images_faceit_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/images/faceit.svg */ \"./src/assets/images/faceit.svg\");\n/* harmony import */ var _assets_images_shortly_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/images/shortly.svg */ \"./src/assets/images/shortly.svg\");\n/* harmony import */ var _assets_images_account_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/images/account.svg */ \"./src/assets/images/account.svg\");\n/* harmony import */ var _assets_images_photosnap_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/images/photosnap.svg */ \"./src/assets/images/photosnap.svg\");\n/* harmony import */ var _assets_images_eyecam_co_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./assets/images/eyecam-co.svg */ \"./src/assets/images/eyecam-co.svg\");\n/* harmony import */ var _assets_images_loop_studios_svg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./assets/images/loop-studios.svg */ \"./src/assets/images/loop-studios.svg\");\n/* harmony import */ var _assets_images_the_air_filter_company_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./assets/images/the-air-filter-company.svg */ \"./src/assets/images/the-air-filter-company.svg\");\n// import render from './js/main.js'\n// window.addEventListener('load', render)\n\n\n\n\n\n\n\n\n\n\n\n\n__webpack_require__(/*! html-loader!../index.html */ \"./node_modules/html-loader/dist/cjs.js!./index.html\");\n\nvar containerFilter = document.querySelector('.filter');\nvar clearButton = document.getElementById('clear');\nvar filter = Array.from(document.querySelectorAll('#filter'));\nfilter.forEach(function (category) {\n  category.addEventListener('click', function () {\n    var filter = [];\n    containerFilter.style.display = 'flex';\n    var sessionStorage = window.sessionStorage;\n    filter.push(category.textContent);\n    sessionStorage.setItem('filter', JSON.stringify(filter));\n  });\n  clearButton.addEventListener('click', function () {\n    containerFilter.style.display = 'none';\n  });\n});\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./db.json */ \"./src/db.json\");\nvar _db_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./db.json */ \"./src/db.json\", 1);\n/* harmony import */ var _styles_sass_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/sass/main.scss */ \"./src/styles/sass/main.scss\");\n/* harmony import */ var _styles_sass_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_sass_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets_images_bg_header_desktop_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/images/bg-header-desktop.svg */ \"./src/assets/images/bg-header-desktop.svg\");\n/* harmony import */ var _assets_images_bg_header_mobile_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/images/bg-header-mobile.svg */ \"./src/assets/images/bg-header-mobile.svg\");\n/* harmony import */ var _assets_images_faceit_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/images/faceit.svg */ \"./src/assets/images/faceit.svg\");\n/* harmony import */ var _assets_images_myhome_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/images/myhome.svg */ \"./src/assets/images/myhome.svg\");\n/* harmony import */ var _assets_images_manage_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/images/manage.svg */ \"./src/assets/images/manage.svg\");\n/* harmony import */ var _assets_images_insure_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/images/insure.svg */ \"./src/assets/images/insure.svg\");\n/* harmony import */ var _assets_images_shortly_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./assets/images/shortly.svg */ \"./src/assets/images/shortly.svg\");\n/* harmony import */ var _assets_images_account_svg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./assets/images/account.svg */ \"./src/assets/images/account.svg\");\n/* harmony import */ var _assets_images_photosnap_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./assets/images/photosnap.svg */ \"./src/assets/images/photosnap.svg\");\n/* harmony import */ var _assets_images_eyecam_co_svg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./assets/images/eyecam-co.svg */ \"./src/assets/images/eyecam-co.svg\");\n/* harmony import */ var _assets_images_loop_studios_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./assets/images/loop-studios.svg */ \"./src/assets/images/loop-studios.svg\");\n/* harmony import */ var _assets_images_the_air_filter_company_svg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./assets/images/the-air-filter-company.svg */ \"./src/assets/images/the-air-filter-company.svg\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n__webpack_require__(/*! html-loader!../index.html */ \"./node_modules/html-loader/dist/cjs.js!./index.html\");\n\nvar containerFilter = document.querySelector('.filter');\nvar clearButton = document.getElementById('clear');\nvar filter = Array.from(document.querySelectorAll('#filter'));\nfilter.forEach(function (category) {\n  category.addEventListener('click', function () {\n    var filter = [];\n    containerFilter.style.display = 'flex';\n    var sessionStorage = window.sessionStorage;\n    filter.push(category.textContent);\n    sessionStorage.setItem('filter', JSON.stringify(filter));\n  });\n  clearButton.addEventListener('click', function () {\n    containerFilter.style.display = 'none';\n  });\n});\nvar jobsList = _db_json__WEBPACK_IMPORTED_MODULE_0__;\nconsole.log(jobsList);\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
@@ -117,7 +117,31 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/src/assets/account.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/account.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"../account.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/account.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/bg-header-desktop.svg":
+/*!*************************************************!*\
+  !*** ./src/assets/images/bg-header-desktop.svg ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"../bg-header-desktop.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/bg-header-desktop.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/bg-header-mobile.svg":
+/*!************************************************!*\
+  !*** ./src/assets/images/bg-header-mobile.svg ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"../bg-header-mobile.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/bg-header-mobile.svg?");
 
 /***/ }),
 
@@ -129,7 +153,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/src/assets/eyecam-co.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/eyecam-co.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"../eyecam-co.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/eyecam-co.svg?");
 
 /***/ }),
 
@@ -141,7 +165,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/src/assets/faceit.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/faceit.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"../faceit.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/faceit.svg?");
 
 /***/ }),
 
@@ -153,7 +177,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/src/assets/insure.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/insure.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"../insure.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/insure.svg?");
 
 /***/ }),
 
@@ -165,7 +189,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/src/assets/loop-studios.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/loop-studios.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"../loop-studios.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/loop-studios.svg?");
 
 /***/ }),
 
@@ -177,7 +201,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/src/assets/manage.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/manage.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"../manage.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/manage.svg?");
 
 /***/ }),
 
@@ -189,7 +213,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/src/assets/myhome.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/myhome.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"../myhome.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/myhome.svg?");
 
 /***/ }),
 
@@ -201,7 +225,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/src/assets/photosnap.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/photosnap.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"../photosnap.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/photosnap.svg?");
 
 /***/ }),
 
@@ -213,7 +237,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/src/assets/shortly.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/shortly.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"../shortly.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/shortly.svg?");
 
 /***/ }),
 
@@ -225,7 +249,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"/src/assets/the-air-filter-company.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/the-air-filter-company.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"../the-air-filter-company.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/the-air-filter-company.svg?");
+
+/***/ }),
+
+/***/ "./src/db.json":
+/*!*********************!*\
+  !*** ./src/db.json ***!
+  \*********************/
+/*! exports provided: data, default */
+/***/ (function(module) {
+
+eval("module.exports = JSON.parse(\"{\\\"data\\\":[{\\\"id\\\":1,\\\"company\\\":\\\"Photosnap\\\",\\\"logo\\\":\\\"./images/photosnap.svg\\\",\\\"new\\\":true,\\\"featured\\\":true,\\\"position\\\":\\\"Senior Frontend Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Senior\\\",\\\"postedAt\\\":\\\"1d ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"USA Only\\\",\\\"languages\\\":[\\\"HTML\\\",\\\"CSS\\\",\\\"JavaScript\\\"],\\\"tools\\\":[]},{\\\"id\\\":2,\\\"company\\\":\\\"Manage\\\",\\\"logo\\\":\\\"./images/manage.svg\\\",\\\"new\\\":true,\\\"featured\\\":true,\\\"position\\\":\\\"Fullstack Developer\\\",\\\"role\\\":\\\"Fullstack\\\",\\\"level\\\":\\\"Midweight\\\",\\\"postedAt\\\":\\\"1d ago\\\",\\\"contract\\\":\\\"Part Time\\\",\\\"location\\\":\\\"Remote\\\",\\\"languages\\\":[\\\"Python\\\"],\\\"tools\\\":[\\\"React\\\"]},{\\\"id\\\":3,\\\"company\\\":\\\"Account\\\",\\\"logo\\\":\\\"./images/account.svg\\\",\\\"new\\\":true,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Frontend Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"2d ago\\\",\\\"contract\\\":\\\"Part Time\\\",\\\"location\\\":\\\"USA Only\\\",\\\"languages\\\":[\\\"JavaScript\\\"],\\\"tools\\\":[\\\"React\\\",\\\"Sass\\\"]},{\\\"id\\\":4,\\\"company\\\":\\\"MyHome\\\",\\\"logo\\\":\\\"./images/myhome.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Frontend Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"5d ago\\\",\\\"contract\\\":\\\"Contract\\\",\\\"location\\\":\\\"USA Only\\\",\\\"languages\\\":[\\\"CSS\\\",\\\"JavaScript\\\"],\\\"tools\\\":[]},{\\\"id\\\":5,\\\"company\\\":\\\"Loop Studios\\\",\\\"logo\\\":\\\"./images/loop-studios.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Software Engineer\\\",\\\"role\\\":\\\"FullStack\\\",\\\"level\\\":\\\"Midweight\\\",\\\"postedAt\\\":\\\"1w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"Worldwide\\\",\\\"languages\\\":[\\\"JavaScript\\\"],\\\"tools\\\":[\\\"Ruby\\\",\\\"Sass\\\"]},{\\\"id\\\":6,\\\"company\\\":\\\"FaceIt\\\",\\\"logo\\\":\\\"./images/faceit.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Backend Developer\\\",\\\"role\\\":\\\"Backend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"2w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"UK Only\\\",\\\"languages\\\":[\\\"Ruby\\\"],\\\"tools\\\":[\\\"RoR\\\"]},{\\\"id\\\":7,\\\"company\\\":\\\"Shortly\\\",\\\"logo\\\":\\\"./images/shortly.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"2w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"Worldwide\\\",\\\"languages\\\":[\\\"HTML\\\",\\\"JavaScript\\\"],\\\"tools\\\":[\\\"Sass\\\"]},{\\\"id\\\":8,\\\"company\\\":\\\"Insure\\\",\\\"logo\\\":\\\"./images/insure.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Frontend Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"2w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"USA Only\\\",\\\"languages\\\":[\\\"JavaScript\\\"],\\\"tools\\\":[\\\"Vue\\\",\\\"Sass\\\"]},{\\\"id\\\":9,\\\"company\\\":\\\"Eyecam Co.\\\",\\\"logo\\\":\\\"./images/eyecam-co.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Full Stack Engineer\\\",\\\"role\\\":\\\"Fullstack\\\",\\\"level\\\":\\\"Midweight\\\",\\\"postedAt\\\":\\\"3w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"Worldwide\\\",\\\"languages\\\":[\\\"JavaScript\\\",\\\"Python\\\"],\\\"tools\\\":[\\\"Django\\\"]},{\\\"id\\\":10,\\\"company\\\":\\\"The Air Filter Company\\\",\\\"logo\\\":\\\"./images/the-air-filter-company.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Front-end Dev\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"1mo ago\\\",\\\"contract\\\":\\\"Part Time\\\",\\\"location\\\":\\\"Worldwide\\\",\\\"languages\\\":[\\\"JavaScript\\\"],\\\"tools\\\":[\\\"React\\\",\\\"Sass\\\"]}]}\");\n\n//# sourceURL=webpack:///./src/db.json?");
 
 /***/ }),
 

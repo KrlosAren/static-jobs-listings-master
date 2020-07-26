@@ -1,7 +1,11 @@
-// import render from './js/main.js'
-// window.addEventListener('load', render)
+import data from './db.json'
 
 import './styles/sass/main.scss'
+
+import bgDesktop from './assets/images/bg-header-desktop.svg'
+import bgMobile from './assets/images/bg-header-mobile.svg'
+
+import favicon from './assets/images/faceit.svg'
 
 import myhome from './assets/images/myhome.svg'
 import manage from './assets/images/manage.svg'
@@ -34,5 +38,8 @@ filter.forEach(category =>{
 
   clearButton.addEventListener('click', () => {
     containerFilter.style.display = 'none'
+    
   })
 })
+const jobsList = data
+console.log(jobsList)
