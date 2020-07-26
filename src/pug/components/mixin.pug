@@ -16,12 +16,12 @@ mixin box(company, logo, time, featured, position, role, level, postedAt, contra
         li #{location}
     span.box__tool
       ul
-        li=role
-        li=level
+        li#filter=role
+        li#filter=level
         each value in languages
-          li #{value}
+          li#filter #{value}
         each tool in tools
-          li #{tool}
+          li#filter #{tool}
 
 
 //- &middot;

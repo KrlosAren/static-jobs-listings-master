@@ -1,12 +1,17 @@
-@include media(mobile-small) {
+@include media(mobile-big) {
   header {
     background-image: url("../../assets/images/bg-header-mobile.svg");
   }
 
   .filter {
-    height: 180px;
-    @include grid-template-columns(1fr min(40px));
+    padding: 8px 10px;
+    &__category {
+      flex-wrap: wrap;
 
+      &--content {
+        margin: 5px 0;
+      }
+    }
   }
 
   .box {
