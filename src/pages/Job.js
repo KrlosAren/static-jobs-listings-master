@@ -4,7 +4,10 @@ class Job {
   }
 
   render() {
-    this.filter = this.detail.role.concat(',', this.detail.level).concat(',', this.detail.languages).concat(',', this.detail.tools).split(',')
+    this.filter = this.detail.role.concat(',', this.detail.level)
+      .concat(',', this.detail.languages)
+      .concat(',', this.detail.tools)
+      .split(',').filter(Boolean)
     const view = `
   <article class="box">
     <img src=${this.detail.logo}><span class="box__content">
@@ -15,11 +18,11 @@ class Job {
         `<li>New!</li>`
         : ``}
           ${this.detail.featured === true ?
-        `<li>Features!</li>`
+        `<li>Featured</li>`
         : ``}
         </ul>
       </span>
-      <h3>Senior Frontend Developer</h3>
+      <h3>${this.detail.position}</h3>
       <ul class="box__content--position">
         <li>${this.detail.postedAt}</li>
         <li>${this.detail.contract}</li>
@@ -28,8 +31,8 @@ class Job {
     </span>
     <span class="box__tool">
       <ul>
-        ${this.filter.map(card => `
-          <li id="filter">${card}</li>
+        ${this.filter.map(selection => `
+          <li id="filter">${selection}</li>
         `).join('')}
       </ul>
     </span>
