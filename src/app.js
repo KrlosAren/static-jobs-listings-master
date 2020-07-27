@@ -20,39 +20,59 @@ import theairfiltercompany from './assets/images/the-air-filter-company.svg'
 
 import JobsList from './pages/JobsList.js'
 
-// const containerFilter = document.querySelector('.filter')
 
-// const clearButton = document.getElementById('clear')
-
-// const filter = Array.from(document.querySelectorAll('#filter')  )
-// filter.forEach(category =>{
-//   category.addEventListener('click', () =>{
-//     const filter = []
-//     containerFilter.style.display = 'flex'
-//     const sessionStorage = window.sessionStorage
-//     filter.push(category.textContent)
-//     sessionStorage.setItem('filter', JSON.stringify(filter))
-//   })
-
-
-//   clearButton.addEventListener('click', () => {
-//     containerFilter.style.display = 'none'
-    
-//   })
-// })
 
 const app = document.getElementById('app')
+
+import data from './db.json'
+import Job from './pages/Job'
+
+
 
 
 const render = async () => {
 
-  app.innerHTML = await JobsList()
+  const list = data
+
+  const jobsListArray = []
+  list.forEach(job => {
+    const newJob = new Job(job)
+    jobsListArray.push(newJob.render())
+
+    // return jobsListArray
+  })
+  console.log(jobsListArray)
+    app.innerHTML = jobsListArray.join('')
+  // app.innerHTML =  
+
 }
 
-window.addEventListener('load',render)
+window.addEventListener('load', render)
 
-if(module.hot) {
+if (module.hot) {
   module.hot.accept('./pages/JobsList.js', () => {
     render()
   })
 }
+
+
+const containerFilter = document.querySelector('.filter')
+
+const clearButton = document.getElementById('clear')
+
+const filter = Array.from(document.querySelectorAll('#filter')  )
+filter.forEach(category =>{
+  category.addEventListener('click', () =>{
+    const filter = []
+    containerFilter.style.display = 'flex'
+    const sessionStorage = window.sessionStorage
+    filter.push(category.textContent)
+    sessionStorage.setItem('filter', JSON.stringify(filter))
+  })
+
+
+  clearButton.addEventListener('click', () => {
+    containerFilter.style.display = 'none'
+
+  })
+})

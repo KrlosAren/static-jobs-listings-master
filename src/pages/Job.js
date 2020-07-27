@@ -1,27 +1,44 @@
-
 class Job {
-  constructor(id, data) {
-    this.id = id
-    this.data = data
-   }
+  constructor(data) {
+    this.detail = data
+  }
 
-   template() {
-     const view = `
-      
-     `;
-     return view
-   }
-  
-
-
-   render() {
-     data: {
-       
-     }
-   }
+  render() {
+    this.filter = this.detail.role.concat(',', this.detail.level).concat(',', this.detail.languages).concat(',', this.detail.tools).split(',')
+    const view = `
+  <article class="box">
+    <img src=${this.detail.logo}><span class="box__content">
+      <span class="box__content--title">
+        <h1>${this.detail.company}</h1>
+        <ul>
+          ${this.detail.new === true ?
+        `<li>New!</li>`
+        : ``}
+          ${this.detail.featured === true ?
+        `<li>Features!</li>`
+        : ``}
+        </ul>
+      </span>
+      <h3>Senior Frontend Developer</h3>
+      <ul class="box__content--position">
+        <li>${this.detail.postedAt}</li>
+        <li>${this.detail.contract}</li>
+        <li>${this.detail.location}</li>
+      </ul>
+    </span>
+    <span class="box__tool">
+      <ul>
+        ${this.filter.map(card => `
+          <li id="filter">${card}</li>
+        `).join('')}
+      </ul>
+    </span>
+  </article>
+`;
+    return view
+  }
 }
 
-
-
-
 export default Job;
+
+

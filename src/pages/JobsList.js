@@ -4,10 +4,14 @@ import Job from './Job.js'
 
 // const jobsList = data
 
-const JobsList = () => {
-  
-  return
+const ListJobs = () => {
+  // debugger
+  const jobsList = data
+  jobsList.forEach( job =>{
+    const listJobsNew = new Job(job)
+    return listJobsNew
+  })
 }
 
 
-export default JobsList;
+export default ListJobs;
