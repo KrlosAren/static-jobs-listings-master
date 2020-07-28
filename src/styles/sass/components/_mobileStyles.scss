@@ -4,13 +4,9 @@
   }
 
   .filter {
-    padding: 8px 10px;
-    &__category {
-      flex-wrap: wrap;
 
-      &--content {
-        margin: 5px 0;
-      }
+    &__categories {
+      flex-wrap: wrap;
     }
   }
 
