@@ -4,11 +4,6 @@ class Categories {
     this.content = content
   }
 
-  listCategories(category) {
-    this.listFilter = category
-    return this.listFilter
-  }
-
   template(filters) {
     const view = `
     <div class="filter">

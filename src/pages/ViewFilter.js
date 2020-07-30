@@ -7,7 +7,7 @@ class ViewFilter {
   template() {
     const view = `
       <div class="filter">
-        <h3 class="clear">Clear</h3>
+        <h3 class="clear" id="clear">Clear</h3>
       </div>
     `;
     return view;

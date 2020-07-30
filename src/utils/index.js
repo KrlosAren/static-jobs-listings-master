@@ -2,20 +2,23 @@ import '../styles/sass/main.scss'
 
 import data from '../db.json'
 import Job from '../pages/Job'
+import {Filter} from '../utils/Filter'
+
 
 
 const app = document.getElementById('app')
-const render = () => {
 
-  const FilterId = null
-  const list = FilterId ? listId : data
+const render = async () => {
+  const list =  data.jobs
   const jobsListArray = []
   list.forEach(job => {
-    const newJob = new Job(job)
+    // debugger
+    const newJob = new Job(job.id)
     jobsListArray.push(newJob.render())
   })
+  
   app.innerHTML = jobsListArray.join('')
-
+  
 }
 
 export default render;

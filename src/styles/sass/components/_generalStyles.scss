@@ -76,6 +76,7 @@ header {
   border-radius: $border-radius;
   position: relative;
   align-items: center;
+  background-color: white;
   // background-color: $color-light-gray;
   @include display-grid;
   @include grid-template-columns(100px auto auto);

@@ -1,7 +1,9 @@
 
 
 import render from './utils/index.js'
-import Filter from './utils/Filter.js'
+import {Filter} from './utils/Filter.js'
+
+import getData from './utils/getData'
 // import Observer from './utils/Observer'
 
 window.addEventListener('load', render)
