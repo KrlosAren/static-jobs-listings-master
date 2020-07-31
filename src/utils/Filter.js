@@ -25,13 +25,13 @@ const Filter = () => {
     if (clickTarget.id === 'clear') {
       clear()
     }
-    
+
     if (clickTarget.id === 'tag') {
       debugger
       const valuesTag = []
       const tags = document.querySelectorAll('#tag')
-      tags.forEach( tag => valuesTag.push(tag.textContent))
-      const newFilter = valuesTag.filter( value => {
+      tags.forEach(tag => valuesTag.push(tag.textContent))
+      const newFilter = valuesTag.filter(value => {
         return value !== clickTarget.textContent
       })
       clickTarget.remove()

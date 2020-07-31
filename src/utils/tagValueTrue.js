@@ -1,5 +1,4 @@
 function tagValueTrue(listOfValidation) {
-  // debugger
   const listId = []
   for (const i of listOfValidation) {
     const id = i.reduce((acc, cu) => {
