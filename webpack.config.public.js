@@ -6,26 +6,26 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 
 module.exports = {
-  entry:{
-    app: path.resolve(__dirname,'./src/app.js'),
-  } ,
+  entry: {
+    app: path.resolve(__dirname, './src/app.js'),
+  },
   mode: 'development',
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'js/[name].js'
   },
-  module:{
-    rules:[
+  module: {
+    rules: [
       {
         test: /\.js$/,
-        use:'babel-loader',
+        use: 'babel-loader',
         exclude: /node_modules/,
       },
       {
         test: /\.html$/i,
         use: [
           'html-loader'
-          ],
+        ],
       },
       {
         test: /\.(sa|sc|c)ss$/,
@@ -34,7 +34,7 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
           },
           {
-            loader:'css-loader',
+            loader: 'css-loader',
           },
           {
             loader: 'resolve-url-loader',
@@ -49,7 +49,7 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        use : [
+        use: [
           {
             loader: 'pug-loader',
             options: {
@@ -67,6 +67,12 @@ module.exports = {
           name: '[name].[ext]',
         },
       },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        use: {
+          loader: 'url-loader?limit=100000',
+        },
+      }
     ]
   },
   plugins: [
