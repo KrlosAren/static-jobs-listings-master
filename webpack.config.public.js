@@ -1,6 +1,5 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
@@ -11,7 +10,7 @@ module.exports = {
   },
   mode: 'development',
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].js'
   },
   module: {
@@ -30,10 +29,24 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'resolve-url-loader',
-          'sass-loader',
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'resolve-url-loader',
+            // options: {
+            //   join: (uri, base) => path.join('./', base, uri)
+            // }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            }
+          }
         ]
       },
       {
@@ -51,7 +64,7 @@ module.exports = {
         test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
         loader: 'file-loader',
         options: {
-          outputPath: '/src/assets/',
+          outputPath: './src/assets/',
           name: '[name].[ext]',
         },
       },

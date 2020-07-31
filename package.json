@@ -6,7 +6,7 @@
   "scripts": {
     "start:server": "json-server --port 4500 --watch ./src/db.json",
     "start": "webpack-dev-server --config ./webpack.config.local.js --mode development",
-    "start:public": "webpack --config ./webpack.config.public.js --mode development",
+    "build:dist": "webpack --config ./webpack.config.public.js --mode development",
     "build:local": "webpack --config ./webpack.config.local.js --mode production"
   },
   "keywords": [],
