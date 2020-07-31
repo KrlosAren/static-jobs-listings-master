@@ -1,4 +1,4 @@
-import data from '../db.json'
+import data from './db.json'
 import {returnArray} from '../utils/returnArray.js'
 import differenceOf2Arrays from '../utils/differenceTwoArrays'
 import tagValueTrue from '../utils/tagValueTrue.js'

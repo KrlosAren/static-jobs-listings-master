@@ -42,15 +42,12 @@ module.exports = {
           {
             loader: 'resolve-url-loader',
             options: {
-              sourceMap: true,
               debug: true,
-              absolute: true,
             }
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true,
               implementation: require('sass')
             }
           }
