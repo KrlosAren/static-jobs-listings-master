@@ -1,15 +1,18 @@
+
+
 @include media(mobile-big) {
   header {
     background-image: url("../../assets/images/bg-header-mobile.svg");
   }
 
   .filter {
-    padding: 8px 10px;
-    &__category {
-      flex-wrap: wrap;
+    padding: 1.5em;
 
-      &--content {
-        margin: 5px 0;
+    &__tag {
+      display: block;
+      
+      h3 {
+        margin: 0 .5em;
       }
     }
   }

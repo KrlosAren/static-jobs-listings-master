@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
+const webpack = require('webpack')
 
 module.exports = {
   entry:{
@@ -13,7 +14,8 @@ module.exports = {
   },
   devServer: {
     open: true,
-    port: 9000
+    port: 9000,
+    hot: true,
   },
   module:{
     rules:[
@@ -55,6 +57,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       alwaysWriteToDisk: true,
       filename: 'index.html',

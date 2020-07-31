@@ -1,2 +1,23 @@
-import data from './db.json'
+import '../styles/sass/main.scss'
 
+import data from '../db.json'
+import Job from '../pages/Job'
+
+
+
+const app = document.getElementById('app')
+
+const render = async () => {
+  const list =  data.jobs
+  const jobsListArray = []
+  list.forEach(job => {
+    // debugger
+    const newJob = new Job(job.id)
+    jobsListArray.push(newJob.render())
+  })
+  
+  app.innerHTML = jobsListArray.join('')
+  
+}
+
+export default render;

@@ -6,50 +6,39 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 
 module.exports = {
-  entry:{
-    app: path.resolve(__dirname,'./src/app.js'),
-  } ,
+  entry: {
+    app: path.resolve(__dirname, './src/app.js'),
+  },
   mode: 'development',
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'js/[name].js'
   },
-  module:{
-    rules:[
+  module: {
+    rules: [
       {
         test: /\.js$/,
-        use:'babel-loader',
+        use: 'babel-loader',
         exclude: /node_modules/,
       },
       {
         test: /\.html$/i,
         use: [
           'html-loader'
-          ],
+        ],
       },
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /\.scss$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          {
-            loader:'css-loader',
-          },
-          {
-            loader: 'resolve-url-loader',
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              implementation: require('sass')
-            }
-          }
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'resolve-url-loader',
+          'sass-loader',
         ]
       },
       {
         test: /\.pug$/,
-        use : [
+        use: [
           {
             loader: 'pug-loader',
             options: {
@@ -62,7 +51,6 @@ module.exports = {
         test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
         loader: 'file-loader',
         options: {
-          publicPath: '../',
           outputPath: '/src/assets/',
           name: '[name].[ext]',
         },

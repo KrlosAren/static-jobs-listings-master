@@ -1,45 +1,20 @@
-import data from './db.json'
-
-import './styles/sass/main.scss'
-
-import bgDesktop from './assets/images/bg-header-desktop.svg'
-import bgMobile from './assets/images/bg-header-mobile.svg'
-
-import favicon from './assets/images/faceit.svg'
-
-import myhome from './assets/images/myhome.svg'
-import manage from './assets/images/manage.svg'
-import insure from './assets/images/insure.svg'
-import faceit from './assets/images/faceit.svg'
-import shortly from './assets/images/shortly.svg'
-import account from './assets/images/account.svg'
-import photosnap from './assets/images/photosnap.svg'
-import eyecamco from './assets/images/eyecam-co.svg'
-import loopstudios from './assets/images/loop-studios.svg'
-import theairfiltercompany from './assets/images/the-air-filter-company.svg'
-
-require('html-loader!../index.html');
 
 
-const containerFilter = document.querySelector('.filter')
+import render from './utils/index.js'
+import {Filter} from './utils/Filter.js'
 
-const clearButton = document.getElementById('clear')
+import getData from './utils/getData'
+// import Observer from './utils/Observer'
 
-const filter = Array.from(document.querySelectorAll('#filter')  )
-filter.forEach(category =>{
-  category.addEventListener('click', () =>{
-    const filter = []
-    containerFilter.style.display = 'flex'
-    const sessionStorage = window.sessionStorage
-    filter.push(category.textContent)
-    sessionStorage.setItem('filter', JSON.stringify(filter))
+window.addEventListener('load', render)
+window.addEventListener('load', Filter)
+// window.addEventListener('load', Observer)
+
+
+
+
+if (module.hot) {
+  module.hot.accept('./utils/index.js', () => {
+    render()
   })
-
-
-  clearButton.addEventListener('click', () => {
-    containerFilter.style.display = 'none'
-    
-  })
-})
-const jobsList = data
-console.log(jobsList)
+}
