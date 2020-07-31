@@ -1,7 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
-const webpack = require('webpack')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   entry:{
@@ -9,30 +9,36 @@ module.exports = {
   } ,
   mode: 'development',
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].js'
   },
   devServer: {
-    open: true,
     port: 9000,
-    hot: true,
+    open: true,
   },
   module:{
     rules:[
       {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      },
-      {
         test: /\.scss$/,
         use: [
-          'style-loader',
-          'css-loader',
-          'resolve-url-loader',
-          'sass-loader',
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+          },
+          // {
+          //   loader: 'resolve-url-loader',
+          //   options: {
+          //     debug: true,
+          //   }
+          // },
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: require('sass')
+            }
+          }
         ]
       },
       {
@@ -57,12 +63,15 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      alwaysWriteToDisk: true,
       filename: 'index.html',
       template: path.resolve(__dirname, './src/pug/index.pug')
     }),
-    new HtmlWebpackHarddiskPlugin()
+    new MiniCssExtractPlugin({
+      filename: './src/styles/[name].css',
+    }),
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['**/app.*', '**/commons.*'],
+    })
   ]
 }

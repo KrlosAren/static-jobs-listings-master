@@ -3,33 +3,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
-
 module.exports = {
-  entry: {
-    app: path.resolve(__dirname, './src/app.js'),
-  },
+  entry:{
+    app: path.resolve(__dirname,'./src/app.js'),
+  } ,
   mode: 'development',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].js'
   },
-  devServer:{
-    port: 8500,
-    open: true,
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: 'babel-loader',
-        exclude: /node_modules/,
-      },
-      {
-        test: /\.html$/i,
-        use: [
-          'html-loader'
-        ],
-      },
+  module:{
+    rules:[
       {
         test: /\.scss$/,
         use: [
@@ -39,12 +23,12 @@ module.exports = {
           {
             loader: 'css-loader',
           },
-          {
-            loader: 'resolve-url-loader',
-            options: {
-              debug: true,
-            }
-          },
+          // {
+          //   loader: 'resolve-url-loader',
+          //   options: {
+          //     debug: true,
+          //   }
+          // },
           {
             loader: 'sass-loader',
             options: {
@@ -55,7 +39,7 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        use: [
+        use : [
           {
             loader: 'pug-loader',
             options: {
