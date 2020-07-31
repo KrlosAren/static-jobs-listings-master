@@ -2,7 +2,6 @@ import '../styles/sass/main.scss'
 
 import data from '../db.json'
 import Job from '../pages/Job'
-import {Filter} from '../utils/Filter'
 
 
 

@@ -1,30 +1,43 @@
 import Categories from '../pages/Categories'
 import { tagsSearchBar } from '../utils/tagsSearchBar'
 
-import { removeFilter } from '../utils/removeFilter.js'
+import FilterRender from '../utils/FilterRender'
 import clear from '../utils/Clear.js'
-import Job from '../pages/Job.js'
+
 
 const Filter = () => {
-  const app = document.getElementById('app')
   const filterContent = document.getElementById('filterContent')
-  const filter = Array.from(document.querySelectorAll('#filter'))
+  const filterTags = new Categories()
   const filterCategories = []
-  const filterJobRender = []
-  filter.map(btn => {
-    btn.addEventListener('click', () => {
-      const filterRender = new Categories()
-      filterCategories.push(btn.textContent)
-      filterContent.innerHTML = filterRender.template(filterCategories)
-      const listId = tagsSearchBar(filterCategories)
 
-      listId.forEach(job => {
-        const newJob = new Job(job)
-        filterJobRender.push(newJob.render())
+
+  window.addEventListener('click', (event) => {
+    const clickTarget = event.target
+
+
+    if (clickTarget.id === 'filter') {
+      filterCategories.push(clickTarget.textContent)
+      filterContent.innerHTML = filterTags.template(filterCategories)
+      const listId = tagsSearchBar(filterCategories)
+      FilterRender(listId)
+    }
+
+    if (clickTarget.id === 'clear') {
+      clear()
+    }
+    
+    if (clickTarget.id === 'tag') {
+      debugger
+      const valuesTag = []
+      const tags = document.querySelectorAll('#tag')
+      tags.forEach( tag => valuesTag.push(tag.textContent))
+      const newFilter = valuesTag.filter( value => {
+        return value !== clickTarget.textContent
       })
-      app.innerHTML = filterJobRender.join('')
-      removeFilter()
-    })
+      clickTarget.remove()
+      const listNew = tagsSearchBar(newFilter)
+      newFilter.length === 0 ? clear() : FilterRender(listNew)
+    }
   })
 }
 

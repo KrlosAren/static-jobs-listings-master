@@ -10,60 +10,67 @@ header {
   width: 80%;
   min-height: 80px;
   bottom: 40px;
-  padding: 10px 35px;
+  padding: 1.5em;
   margin: auto;
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   border-radius: $border-radius;
-  background-color: $color-light-cyan;
+  background-color: white;
   @include box-shadow;
-  
 
-  &__categories {
-    display: inherit;
+  &__tag {
+    display: flex;
+    flex-wrap: wrap;
 
-    div {
-      padding: 2px 6px;
-      display: flex;
-      align-items: center;
+    
+    h3 {
+      padding: .5em;
+      border-radius: 5px;
+      margin: 0 1.2em;
+      width: auto;
+      position: relative;
+      color: $color-primary;
+      background-color: $color-light-gray;
+      font-weight: $font-weight-700;
+      @include font-size($font-14);
       
-      h3 {
-        margin: 2px 6px;
-        border-top-left-radius:    3px;
-        border-bottom-left-radius: 3px;
-        color: $color-primary;
-        background-color: $color-light-gray;
-        font-family: $font-family-spartan;
-        @include font-size($font-14);
+      &:nth-child(1) {
+        margin-left: 0;
       }
-      
-      span {
-        border-top-right-radius:    3px;
-        border-bottom-right-radius: 3px;
-        padding: 2px 6px;
-        color: $color-light-gray;
+
+      &::after {
+        content: attr(data-remove);
+        top: 0;
+        right: -28px;
+        width: 30px;
+        height: 100%;
+        background-size: 12px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        position: absolute;
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../../assets/images/icon-remove.svg");
         background-color: $color-primary;
-        &:hover {
-          cursor: pointer;
-          background-color: $color-very-dark-cyan;
-        }
       }
-  
+      &:hover::after {
+        cursor: pointer;
+        background-color: $color-very-dark-cyan;
+      }
     }
   }
-
   &__clear {
-    h3 {
-      color: $color-primary;
-      font-family: $font-family-spartan;
-      @include font-size($font-12);
+    color: $color-primary;
+    font-family: $font-family-spartan;
+    font-weight: $font-weight-700;
+    @include font-size($font-12);
 
-      &:hover {
-        cursor: pointer;
-        text-decoration: underline;
-      }
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
     }
   }
 }
@@ -77,7 +84,6 @@ header {
   position: relative;
   align-items: center;
   background-color: white;
-  // background-color: $color-light-gray;
   @include display-grid;
   @include grid-template-columns(100px auto auto);
   @include box-shadow;

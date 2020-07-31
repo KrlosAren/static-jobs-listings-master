@@ -4,9 +4,14 @@
   }
 
   .filter {
+    padding: 1.5em;
 
-    &__categories {
-      flex-wrap: wrap;
+    &__tag {
+      display: block;
+      
+      h3 {
+        margin: 0 .5em;
+      }
     }
   }
 

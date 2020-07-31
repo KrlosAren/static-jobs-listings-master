@@ -1,9 +1,10 @@
+import render from '../utils/index.js'
+import {Filter} from '../utils/Filter'
 
 const clear = () => {
-  const clearBtn = document.getElementById('clear')
-  clearBtn.addEventListener('click', () => {
-    
-  })
+    filterContent.innerHTML = ''
+    render()
+    Filter()
 }
 
 export default clear
