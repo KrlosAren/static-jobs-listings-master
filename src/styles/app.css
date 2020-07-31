@@ -492,7 +492,7 @@ h5 {
 header {
   width: 100%;
   height: 150px;
-  background-image: url("/home/travis/build/KrlosAren/static-jobs-listings-master/src/assets/images/bg-header-desktop.svg");
+  background-image: url(src/assets/bg-header-desktop.svg);
   background-position: center;
   background-color: #5ba4a4;
 }
@@ -544,7 +544,7 @@ header {
   display: block;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/home/travis/build/KrlosAren/static-jobs-listings-master/src/assets/images/icon-remove.svg");
+  background-image: url(src/assets/icon-remove.svg);
   background-color: #5ba4a4;
 }
 .filter__tag h3:hover::after {
@@ -707,7 +707,7 @@ header {
 
 @media only screen and (max-width: 768px) {
   header {
-    background-image: url("/home/travis/build/KrlosAren/static-jobs-listings-master/src/assets/images/bg-header-mobile.svg");
+    background-image: url(src/assets/bg-header-mobile.svg);
   }
 
   .filter {

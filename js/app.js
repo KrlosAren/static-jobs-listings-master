@@ -219,14 +219,159 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 
 /***/ }),
 
-/***/ "./src/db.json":
-/*!*********************!*\
-  !*** ./src/db.json ***!
-  \*********************/
-/*! exports provided: jobs, default */
-/***/ (function(module) {
+/***/ "./src/assets/images/account.svg":
+/*!***************************************!*\
+  !*** ./src/assets/images/account.svg ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("module.exports = JSON.parse(\"{\\\"jobs\\\":[{\\\"id\\\":1,\\\"company\\\":\\\"Photosnap\\\",\\\"logo\\\":\\\"../src/assets/images/photosnap.svg\\\",\\\"new\\\":true,\\\"featured\\\":true,\\\"position\\\":\\\"Senior Frontend Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Senior\\\",\\\"postedAt\\\":\\\"1d ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"USA Only\\\",\\\"languages\\\":[\\\"HTML\\\",\\\"CSS\\\",\\\"JavaScript\\\"],\\\"tools\\\":[]},{\\\"id\\\":2,\\\"company\\\":\\\"Manage\\\",\\\"logo\\\":\\\"../src/assets/images/manage.svg\\\",\\\"new\\\":true,\\\"featured\\\":true,\\\"position\\\":\\\"Fullstack Developer\\\",\\\"role\\\":\\\"Fullstack\\\",\\\"level\\\":\\\"Midweight\\\",\\\"postedAt\\\":\\\"1d ago\\\",\\\"contract\\\":\\\"Part Time\\\",\\\"location\\\":\\\"Remote\\\",\\\"languages\\\":[\\\"Python\\\"],\\\"tools\\\":[\\\"React\\\"]},{\\\"id\\\":3,\\\"company\\\":\\\"Account\\\",\\\"logo\\\":\\\"../src/assets/images/account.svg\\\",\\\"new\\\":true,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Frontend Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"2d ago\\\",\\\"contract\\\":\\\"Part Time\\\",\\\"location\\\":\\\"USA Only\\\",\\\"languages\\\":[\\\"JavaScript\\\"],\\\"tools\\\":[\\\"React\\\",\\\"Sass\\\"]},{\\\"id\\\":4,\\\"company\\\":\\\"MyHome\\\",\\\"logo\\\":\\\"../src/assets/images/myhome.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Frontend Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"5d ago\\\",\\\"contract\\\":\\\"Contract\\\",\\\"location\\\":\\\"USA Only\\\",\\\"languages\\\":[\\\"CSS\\\",\\\"JavaScript\\\"],\\\"tools\\\":[]},{\\\"id\\\":5,\\\"company\\\":\\\"Loop Studios\\\",\\\"logo\\\":\\\"../src/assets/images/loop-studios.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Software Engineer\\\",\\\"role\\\":\\\"FullStack\\\",\\\"level\\\":\\\"Midweight\\\",\\\"postedAt\\\":\\\"1w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"Worldwide\\\",\\\"languages\\\":[\\\"JavaScript\\\"],\\\"tools\\\":[\\\"Ruby\\\",\\\"Sass\\\"]},{\\\"id\\\":6,\\\"company\\\":\\\"FaceIt\\\",\\\"logo\\\":\\\"../src/assets/images/faceit.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Backend Developer\\\",\\\"role\\\":\\\"Backend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"2w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"UK Only\\\",\\\"languages\\\":[\\\"Ruby\\\"],\\\"tools\\\":[\\\"RoR\\\"]},{\\\"id\\\":7,\\\"company\\\":\\\"Shortly\\\",\\\"logo\\\":\\\"../src/assets/images/shortly.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"2w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"Worldwide\\\",\\\"languages\\\":[\\\"HTML\\\",\\\"JavaScript\\\"],\\\"tools\\\":[\\\"Sass\\\"]},{\\\"id\\\":8,\\\"company\\\":\\\"Insure\\\",\\\"logo\\\":\\\"../src/assets/images/insure.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Frontend Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"2w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"USA Only\\\",\\\"languages\\\":[\\\"JavaScript\\\"],\\\"tools\\\":[\\\"Vue\\\",\\\"Sass\\\"]},{\\\"id\\\":9,\\\"company\\\":\\\"Eyecam Co.\\\",\\\"logo\\\":\\\"../src/assets/images/eyecam-co.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Full Stack Engineer\\\",\\\"role\\\":\\\"Fullstack\\\",\\\"level\\\":\\\"Midweight\\\",\\\"postedAt\\\":\\\"3w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"Worldwide\\\",\\\"languages\\\":[\\\"JavaScript\\\",\\\"Python\\\"],\\\"tools\\\":[\\\"Django\\\"]},{\\\"id\\\":10,\\\"company\\\":\\\"The Air Filter Company\\\",\\\"logo\\\":\\\"../src/assets/images/the-air-filter-company.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Front-end Dev\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"1mo ago\\\",\\\"contract\\\":\\\"Part Time\\\",\\\"location\\\":\\\"Worldwide\\\",\\\"languages\\\":[\\\"JavaScript\\\"],\\\"tools\\\":[\\\"React\\\",\\\"Sass\\\"]}]}\");\n\n//# sourceURL=webpack:///./src/db.json?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/account.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/account.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/bg-header-desktop.svg":
+/*!*************************************************!*\
+  !*** ./src/assets/images/bg-header-desktop.svg ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/bg-header-desktop.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/bg-header-desktop.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/bg-header-mobile.svg":
+/*!************************************************!*\
+  !*** ./src/assets/images/bg-header-mobile.svg ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/bg-header-mobile.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/bg-header-mobile.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/eyecam-co.svg":
+/*!*****************************************!*\
+  !*** ./src/assets/images/eyecam-co.svg ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/eyecam-co.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/eyecam-co.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/faceit.svg":
+/*!**************************************!*\
+  !*** ./src/assets/images/faceit.svg ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/faceit.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/faceit.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/icon-remove.svg":
+/*!*******************************************!*\
+  !*** ./src/assets/images/icon-remove.svg ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/icon-remove.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/icon-remove.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/insure.svg":
+/*!**************************************!*\
+  !*** ./src/assets/images/insure.svg ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/insure.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/insure.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/loop-studios.svg":
+/*!********************************************!*\
+  !*** ./src/assets/images/loop-studios.svg ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/loop-studios.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/loop-studios.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/manage.svg":
+/*!**************************************!*\
+  !*** ./src/assets/images/manage.svg ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/manage.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/manage.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/myhome.svg":
+/*!**************************************!*\
+  !*** ./src/assets/images/myhome.svg ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/myhome.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/myhome.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/photosnap.svg":
+/*!*****************************************!*\
+  !*** ./src/assets/images/photosnap.svg ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/photosnap.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/photosnap.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/shortly.svg":
+/*!***************************************!*\
+  !*** ./src/assets/images/shortly.svg ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/shortly.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/shortly.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/the-air-filter-company.svg":
+/*!******************************************************!*\
+  !*** ./src/assets/images/the-air-filter-company.svg ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"src/assets/the-air-filter-company.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/the-air-filter-company.svg?");
 
 /***/ }),
 
@@ -301,6 +446,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
 
 /***/ }),
 
+/***/ "./src/utils/db.json":
+/*!***************************!*\
+  !*** ./src/utils/db.json ***!
+  \***************************/
+/*! exports provided: jobs, default */
+/***/ (function(module) {
+
+eval("module.exports = JSON.parse(\"{\\\"jobs\\\":[{\\\"id\\\":1,\\\"company\\\":\\\"Photosnap\\\",\\\"logo\\\":\\\"./src/assets/photosnap.svg\\\",\\\"new\\\":true,\\\"featured\\\":true,\\\"position\\\":\\\"Senior Frontend Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Senior\\\",\\\"postedAt\\\":\\\"1d ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"USA Only\\\",\\\"languages\\\":[\\\"HTML\\\",\\\"CSS\\\",\\\"JavaScript\\\"],\\\"tools\\\":[]},{\\\"id\\\":2,\\\"company\\\":\\\"Manage\\\",\\\"logo\\\":\\\"./src/assets/manage.svg\\\",\\\"new\\\":true,\\\"featured\\\":true,\\\"position\\\":\\\"Fullstack Developer\\\",\\\"role\\\":\\\"Fullstack\\\",\\\"level\\\":\\\"Midweight\\\",\\\"postedAt\\\":\\\"1d ago\\\",\\\"contract\\\":\\\"Part Time\\\",\\\"location\\\":\\\"Remote\\\",\\\"languages\\\":[\\\"Python\\\"],\\\"tools\\\":[\\\"React\\\"]},{\\\"id\\\":3,\\\"company\\\":\\\"Account\\\",\\\"logo\\\":\\\"./src/assets/account.svg\\\",\\\"new\\\":true,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Frontend Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"2d ago\\\",\\\"contract\\\":\\\"Part Time\\\",\\\"location\\\":\\\"USA Only\\\",\\\"languages\\\":[\\\"JavaScript\\\"],\\\"tools\\\":[\\\"React\\\",\\\"Sass\\\"]},{\\\"id\\\":4,\\\"company\\\":\\\"MyHome\\\",\\\"logo\\\":\\\"./src/assets/myhome.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Frontend Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"5d ago\\\",\\\"contract\\\":\\\"Contract\\\",\\\"location\\\":\\\"USA Only\\\",\\\"languages\\\":[\\\"CSS\\\",\\\"JavaScript\\\"],\\\"tools\\\":[]},{\\\"id\\\":5,\\\"company\\\":\\\"Loop Studios\\\",\\\"logo\\\":\\\"./src/assets/loop-studios.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Software Engineer\\\",\\\"role\\\":\\\"FullStack\\\",\\\"level\\\":\\\"Midweight\\\",\\\"postedAt\\\":\\\"1w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"Worldwide\\\",\\\"languages\\\":[\\\"JavaScript\\\"],\\\"tools\\\":[\\\"Ruby\\\",\\\"Sass\\\"]},{\\\"id\\\":6,\\\"company\\\":\\\"FaceIt\\\",\\\"logo\\\":\\\"./src/assets/faceit.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Backend Developer\\\",\\\"role\\\":\\\"Backend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"2w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"UK Only\\\",\\\"languages\\\":[\\\"Ruby\\\"],\\\"tools\\\":[\\\"RoR\\\"]},{\\\"id\\\":7,\\\"company\\\":\\\"Shortly\\\",\\\"logo\\\":\\\"./src/assets/shortly.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"2w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"Worldwide\\\",\\\"languages\\\":[\\\"HTML\\\",\\\"JavaScript\\\"],\\\"tools\\\":[\\\"Sass\\\"]},{\\\"id\\\":8,\\\"company\\\":\\\"Insure\\\",\\\"logo\\\":\\\"./src/assets/insure.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Junior Frontend Developer\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"2w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"USA Only\\\",\\\"languages\\\":[\\\"JavaScript\\\"],\\\"tools\\\":[\\\"Vue\\\",\\\"Sass\\\"]},{\\\"id\\\":9,\\\"company\\\":\\\"Eyecam Co.\\\",\\\"logo\\\":\\\"./src/assets/eyecam-co.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Full Stack Engineer\\\",\\\"role\\\":\\\"Fullstack\\\",\\\"level\\\":\\\"Midweight\\\",\\\"postedAt\\\":\\\"3w ago\\\",\\\"contract\\\":\\\"Full Time\\\",\\\"location\\\":\\\"Worldwide\\\",\\\"languages\\\":[\\\"JavaScript\\\",\\\"Python\\\"],\\\"tools\\\":[\\\"Django\\\"]},{\\\"id\\\":10,\\\"company\\\":\\\"The Air Filter Company\\\",\\\"logo\\\":\\\"./src/assets/the-air-filter-company.svg\\\",\\\"new\\\":false,\\\"featured\\\":false,\\\"position\\\":\\\"Front-end Dev\\\",\\\"role\\\":\\\"Frontend\\\",\\\"level\\\":\\\"Junior\\\",\\\"postedAt\\\":\\\"1mo ago\\\",\\\"contract\\\":\\\"Part Time\\\",\\\"location\\\":\\\"Worldwide\\\",\\\"languages\\\":[\\\"JavaScript\\\"],\\\"tools\\\":[\\\"React\\\",\\\"Sass\\\"]}]}\");\n\n//# sourceURL=webpack:///./src/utils/db.json?");
+
+/***/ }),
+
 /***/ "./src/utils/differenceTwoArrays.js":
 /*!******************************************!*\
   !*** ./src/utils/differenceTwoArrays.js ***!
@@ -321,7 +477,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction differenceOf2Arrays(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../db.json */ \"./src/db.json\");\nvar _db_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../db.json */ \"./src/db.json\", 1);\n\n\nvar getData = function getData() {\n  var response = _db_json__WEBPACK_IMPORTED_MODULE_0__.jobs;\n  return response;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (getData);\n\n//# sourceURL=webpack:///./src/utils/getData.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./db.json */ \"./src/utils/db.json\");\nvar _db_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./db.json */ \"./src/utils/db.json\", 1);\n\n\nvar getData = function getData() {\n  var response = _db_json__WEBPACK_IMPORTED_MODULE_0__.jobs;\n  return response;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (getData);\n\n//# sourceURL=webpack:///./src/utils/getData.js?");
 
 /***/ }),
 
@@ -333,7 +489,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _db_
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"./node_modules/@babel/runtime/helpers/asyncToGenerator.js\");\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _styles_sass_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/sass/main.scss */ \"./src/styles/sass/main.scss\");\n/* harmony import */ var _styles_sass_main_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_sass_main_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../db.json */ \"./src/db.json\");\nvar _db_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../db.json */ \"./src/db.json\", 1);\n/* harmony import */ var _pages_Job__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/Job */ \"./src/pages/Job.js\");\n\n\n\n\n\nvar app = document.getElementById('app');\n\nvar render = /*#__PURE__*/function () {\n  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {\n    var list, jobsListArray;\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            list = _db_json__WEBPACK_IMPORTED_MODULE_3__.jobs;\n            jobsListArray = [];\n            list.forEach(function (job) {\n              // debugger\n              var newJob = new _pages_Job__WEBPACK_IMPORTED_MODULE_4__[\"default\"](job.id);\n              jobsListArray.push(newJob.render());\n            });\n            app.innerHTML = jobsListArray.join('');\n\n          case 4:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee);\n  }));\n\n  return function render() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (render);\n\n//# sourceURL=webpack:///./src/utils/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"./node_modules/@babel/runtime/helpers/asyncToGenerator.js\");\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _styles_sass_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/sass/main.scss */ \"./src/styles/sass/main.scss\");\n/* harmony import */ var _styles_sass_main_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_sass_main_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./db.json */ \"./src/utils/db.json\");\nvar _db_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./db.json */ \"./src/utils/db.json\", 1);\n/* harmony import */ var _pages_Job__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/Job */ \"./src/pages/Job.js\");\n/* harmony import */ var _assets_images_myhome_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/images/myhome.svg */ \"./src/assets/images/myhome.svg\");\n/* harmony import */ var _assets_images_manage_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/images/manage.svg */ \"./src/assets/images/manage.svg\");\n/* harmony import */ var _assets_images_insure_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/images/insure.svg */ \"./src/assets/images/insure.svg\");\n/* harmony import */ var _assets_images_faceit_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../assets/images/faceit.svg */ \"./src/assets/images/faceit.svg\");\n/* harmony import */ var _assets_images_shortly_svg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../assets/images/shortly.svg */ \"./src/assets/images/shortly.svg\");\n/* harmony import */ var _assets_images_account_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../assets/images/account.svg */ \"./src/assets/images/account.svg\");\n/* harmony import */ var _assets_images_photosnap_svg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../assets/images/photosnap.svg */ \"./src/assets/images/photosnap.svg\");\n/* harmony import */ var _assets_images_eyecam_co_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../assets/images/eyecam-co.svg */ \"./src/assets/images/eyecam-co.svg\");\n/* harmony import */ var _assets_images_loop_studios_svg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../assets/images/loop-studios.svg */ \"./src/assets/images/loop-studios.svg\");\n/* harmony import */ var _assets_images_the_air_filter_company_svg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../assets/images/the-air-filter-company.svg */ \"./src/assets/images/the-air-filter-company.svg\");\n/* harmony import */ var _assets_images_bg_header_mobile_svg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../assets/images/bg-header-mobile.svg */ \"./src/assets/images/bg-header-mobile.svg\");\n/* harmony import */ var _assets_images_bg_header_desktop_svg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../assets/images/bg-header-desktop.svg */ \"./src/assets/images/bg-header-desktop.svg\");\n/* harmony import */ var _assets_images_icon_remove_svg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../assets/images/icon-remove.svg */ \"./src/assets/images/icon-remove.svg\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar app = document.getElementById('app');\n\nvar render = /*#__PURE__*/function () {\n  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {\n    var list, jobsListArray;\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            list = _db_json__WEBPACK_IMPORTED_MODULE_3__.jobs;\n            jobsListArray = [];\n            list.forEach(function (job) {\n              // debugger\n              var newJob = new _pages_Job__WEBPACK_IMPORTED_MODULE_4__[\"default\"](job.id);\n              jobsListArray.push(newJob.render());\n            });\n            app.innerHTML = jobsListArray.join('');\n\n          case 4:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee);\n  }));\n\n  return function render() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (render);\n\n//# sourceURL=webpack:///./src/utils/index.js?");
 
 /***/ }),
 
@@ -369,7 +525,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction _createForOfIterator
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"tagsSearchBar\", function() { return tagsSearchBar; });\n/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ \"./node_modules/@babel/runtime/helpers/toConsumableArray.js\");\n/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../db.json */ \"./src/db.json\");\nvar _db_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../db.json */ \"./src/db.json\", 1);\n/* harmony import */ var _utils_returnArray_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/returnArray.js */ \"./src/utils/returnArray.js\");\n/* harmony import */ var _utils_differenceTwoArrays__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/differenceTwoArrays */ \"./src/utils/differenceTwoArrays.js\");\n/* harmony import */ var _utils_tagValueTrue_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/tagValueTrue.js */ \"./src/utils/tagValueTrue.js\");\n\n\n\n\n\n\nvar tagsSearchBar = function tagsSearchBar(currentTags) {\n  var value = currentTags.length;\n  var listFilterData = [];\n  _db_json__WEBPACK_IMPORTED_MODULE_1__.jobs.forEach(function (job) {\n    listFilterData.push([job.role, job.level].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(job.languages), _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(job.tools)));\n  });\n  var listOfValidation = [];\n  listFilterData.forEach(function (list) {\n    listOfValidation.push(Object(_utils_differenceTwoArrays__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(list, currentTags));\n  });\n  var listIdFilter = Object(_utils_tagValueTrue_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(listOfValidation);\n  return Object(_utils_returnArray_js__WEBPACK_IMPORTED_MODULE_2__[\"returnArray\"])(listIdFilter, value);\n};\n\n\n\n//# sourceURL=webpack:///./src/utils/tagsSearchBar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"tagsSearchBar\", function() { return tagsSearchBar; });\n/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ \"./node_modules/@babel/runtime/helpers/toConsumableArray.js\");\n/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./db.json */ \"./src/utils/db.json\");\nvar _db_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./db.json */ \"./src/utils/db.json\", 1);\n/* harmony import */ var _utils_returnArray_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/returnArray.js */ \"./src/utils/returnArray.js\");\n/* harmony import */ var _utils_differenceTwoArrays__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/differenceTwoArrays */ \"./src/utils/differenceTwoArrays.js\");\n/* harmony import */ var _utils_tagValueTrue_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/tagValueTrue.js */ \"./src/utils/tagValueTrue.js\");\n\n\n\n\n\n\nvar tagsSearchBar = function tagsSearchBar(currentTags) {\n  var value = currentTags.length;\n  var listFilterData = [];\n  _db_json__WEBPACK_IMPORTED_MODULE_1__.jobs.forEach(function (job) {\n    listFilterData.push([job.role, job.level].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(job.languages), _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(job.tools)));\n  });\n  var listOfValidation = [];\n  listFilterData.forEach(function (list) {\n    listOfValidation.push(Object(_utils_differenceTwoArrays__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(list, currentTags));\n  });\n  var listIdFilter = Object(_utils_tagValueTrue_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(listOfValidation);\n  return Object(_utils_returnArray_js__WEBPACK_IMPORTED_MODULE_2__[\"returnArray\"])(listIdFilter, value);\n};\n\n\n\n//# sourceURL=webpack:///./src/utils/tagsSearchBar.js?");
 
 /***/ })
 
