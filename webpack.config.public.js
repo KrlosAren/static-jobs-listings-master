@@ -13,6 +13,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].js'
   },
+  devServer:{
+    port: 8500,
+    open: true,
+  },
   module: {
     rules: [
       {
@@ -37,14 +41,11 @@ module.exports = {
           },
           {
             loader: 'resolve-url-loader',
-            // options: {
-            //   join: (uri, base) => path.join('./', base, uri)
-            // }
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true,
+              implementation: require('sass')
             }
           }
         ]
