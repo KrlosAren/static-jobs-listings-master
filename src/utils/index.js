@@ -1,6 +1,6 @@
 import '../styles/sass/main.scss'
 
-import data from './db.json'
+import data from '../../db.json'
 import Job from '../pages/Job'
 
 import myhome from '../assets/myhome.svg'

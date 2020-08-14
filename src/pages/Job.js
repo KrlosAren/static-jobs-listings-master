@@ -1,9 +1,8 @@
-import getData from '../utils/getData'
+import data from '../../db.json'
 class Job {
   constructor(id) {
     // debugger
-    const data = getData()
-      this.job = data.filter(job => job.id === id)
+      this.job = data.jobs.filter(job => job.id === id)
 
   }
 
