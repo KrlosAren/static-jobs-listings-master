@@ -4,11 +4,8 @@
   "description": "![Design preview for the Job Listings coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "start:server": "json-server --port 4500 --watch ./src/db.json",
     "start": "webpack-dev-server --config ./webpack.config.local.js --mode development",
-    "build:dist": "webpack --config ./webpack.config.public.js --mode development",
-    "build:start": "webpack-dev-server --config ./webpack.config.public.js --mode development",
-    "build:local": "webpack --config ./webpack.config.local.js --mode production"
+    "build:prod": "webpack --config ./webpack.config.public.js --mode production"
   },
   "keywords": [],
   "author": "Carlos Lopez Zavarce <krlosaren@gmail.com>",
